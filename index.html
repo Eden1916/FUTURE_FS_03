@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brew & Bloom Café – Specialty Coffee & Homemade Bites</title>
-  <meta name="description" content="Brew & Bloom is a cosy specialty coffee café serving hand-crafted drinks, homemade pastries, and all-day brunch. Come in, slow down, stay a while." />
+  <title>Dembel – Ethiopian Coffee House & Kitchen</title>
+  <meta name="description" content="Dembel serves authentic Ethiopian buna (coffee), freshly roasted beans, traditional food, and the famous coffee ceremony. From the birthplace of coffee to your cup." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,10 +12,23 @@
   <!-- ───── NAVBAR ───── -->
   <header id="navbar">
     <nav class="nav-inner">
-      <a href="#hero" class="logo">☕ Brew &amp; Bloom</a>
+      <a href="#hero" class="logo">
+        <svg class="logo-svg" width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Jebena (Ethiopian coffee pot) silhouette -->
+          <path d="M24 4C19 4 16 7 16 12C16 15 17 17 18 18L14 22C12 24 11 27 11 30V38C11 40 12 42 14 42H34C36 42 37 40 37 38V30C37 27 36 24 34 22L30 18C31 17 32 15 32 12C32 7 29 4 24 4Z" fill="currentColor" opacity="0.9"/>
+          <!-- Steam -->
+          <path d="M21 1C21 1 22 -1 22 -2M24 1C24 1 25 -1 25 -2M27 1C27 1 28 -1 28 -2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <!-- Spout -->
+          <path d="M34 24L40 20L38 26Z" fill="currentColor" opacity="0.9"/>
+          <!-- Base ring -->
+          <ellipse cx="24" cy="44" rx="10" ry="2" fill="currentColor" opacity="0.6"/>
+        </svg>
+        <span>Dembel</span>
+      </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
+        <li><a href="#ceremony">Coffee Ceremony</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#contact">Visit Us</a></li>
@@ -30,18 +43,18 @@
   <!-- ───── HERO ───── -->
   <section id="hero">
     <img
-      src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&auto=format&fit=crop&q=80"
-      alt="Cosy café interior with warm lighting"
+      src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&auto=format&fit=crop&q=80"
+      alt="Coffee being poured in a traditional setting"
       class="hero-bg-img"
     />
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <span class="hero-badge">☕ Specialty Coffee · Est. 2017</span>
-      <h1>Your Favourite<br/>Corner of the City</h1>
-      <p>Hand-crafted espresso drinks, freshly baked pastries, and a warm seat waiting for you — every single morning.</p>
+      <span class="hero-badge">☕ From the Birthplace of Coffee · Est. 2015</span>
+      <h1>Buna —<br/>The Soul of Ethiopia</h1>
+      <p>Freshly roasted beans, traditional coffee ceremonies, and authentic Ethiopian kitchen — served with warmth, every day.</p>
       <div class="hero-cta">
         <a href="#menu" class="btn-primary">See the Menu</a>
-        <a href="#order" class="btn-ghost">Order for Pickup</a>
+        <a href="#ceremony" class="btn-ghost">Experience the Ceremony</a>
       </div>
     </div>
     <div class="hero-scroll-hint">
@@ -53,31 +66,31 @@
   <!-- ───── HIGHLIGHTS BAR ───── -->
   <section class="highlights-bar">
     <div class="highlight">
-      <span class="hi-icon">🏅</span>
+      <span class="hi-icon">🏆</span>
       <div>
         <strong>Best Café 2024</strong>
-        <span>Local Choice Awards</span>
+        <span>City Food Awards</span>
       </div>
     </div>
     <div class="highlight">
-      <span class="hi-icon">🌱</span>
+      <span class="hi-icon">🇪🇹</span>
       <div>
-        <strong>Ethically Sourced</strong>
-        <span>Direct-trade beans</span>
+        <strong>Birthplace of Coffee</strong>
+        <span>Beans from Yirgacheffe & Sidamo</span>
       </div>
     </div>
     <div class="highlight">
-      <span class="hi-icon">🧁</span>
+      <span class="hi-icon">🔥</span>
       <div>
-        <strong>Baked In-House</strong>
-        <span>Fresh every morning</span>
+        <strong>Roasted In-House</strong>
+        <span>Every bean, every morning</span>
       </div>
     </div>
     <div class="highlight">
       <span class="hi-icon">⭐</span>
       <div>
         <strong>4.9 / 5 Stars</strong>
-        <span>900+ Google Reviews</span>
+        <span>850+ Reviews</span>
       </div>
     </div>
   </section>
@@ -87,27 +100,27 @@
     <div class="container two-col">
       <div class="about-image-wrap">
         <img
-          src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&auto=format&fit=crop&q=80"
-          alt="Barista carefully pouring latte art"
+          src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&auto=format&fit=crop&q=80"
+          alt="Coffee beans being freshly roasted"
           class="about-img"
         />
         <div class="about-badge-card">
-          <strong>7+</strong>
-          <span>Years Brewing</span>
+          <strong>9+</strong>
+          <span>Years of Buna</span>
         </div>
       </div>
       <div class="about-text">
         <span class="section-label">Our Story</span>
-        <h2>Born from a Love<br/>of Good Coffee</h2>
-        <p>Brew &amp; Bloom started as a weekend pop-up in 2017. Owner and head barista Priya Nair had one goal: bring the kind of thoughtful, slow coffee she'd discovered travelling through Melbourne and Copenhagen to her own neighbourhood.</p>
-        <p>Seven years later, we still roast our beans in small batches, bake everything before 6 AM, and greet most of our regulars by name.</p>
+        <h2>From Addis Ababa<br/>to Your Neighbourhood</h2>
+        <p>Dembel was born in 2015, when founder Selam Tadesse brought her grandmother's coffee tradition across the world. In Ethiopia, coffee isn't a drink — it's a ceremony, a gathering, a way of welcoming guests.</p>
+        <p>We import single-origin beans directly from Yirgacheffe and Sidamo farms, roast them in-house every morning, and brew them the traditional way in a clay jebena pot. Our kitchen serves injera, doro wat, tibs, and the flavours of home.</p>
         <ul class="about-list">
-          <li>✅ Single-origin beans, sourced directly from farmers</li>
-          <li>✅ All pastries baked fresh on-site every morning</li>
-          <li>✅ Oat, almond, soy &amp; coconut milk available</li>
-          <li>✅ Dog-friendly outdoor seating</li>
+          <li>✅ Single-origin Ethiopian beans, direct from farmers</li>
+          <li>✅ Traditional jebena brewing & coffee ceremony</li>
+          <li>✅ Injera made fresh daily from teff flour</li>
+          <li>✅ Vegetarian, vegan & gluten-free options available</li>
         </ul>
-        <a href="#contact" class="btn-primary">Find Us</a>
+        <a href="#contact" class="btn-primary">Visit Us</a>
       </div>
     </div>
   </section>
@@ -117,14 +130,49 @@
     <div class="container">
       <span class="section-label">What We Serve</span>
       <h2 class="section-title">The Menu</h2>
-      <p class="section-sub">Everything is made to order. Seasonal specials change weekly — follow us on Instagram to stay updated.</p>
+      <p class="section-sub">Everything is made to order with imported Ethiopian spices and fresh ingredients. Gluten-free injera available on request.</p>
       <div class="menu-tabs">
-        <button class="tab-btn active" data-tab="coffee">Coffee</button>
-        <button class="tab-btn" data-tab="drinks">Other Drinks</button>
-        <button class="tab-btn" data-tab="pastries">Pastries &amp; Bakes</button>
-        <button class="tab-btn" data-tab="brunch">All-Day Brunch</button>
+        <button class="tab-btn active" data-tab="buna">Buna (Coffee)</button>
+        <button class="tab-btn" data-tab="drinks">Tea & Drinks</button>
+        <button class="tab-btn" data-tab="food">Ethiopian Kitchen</button>
+        <button class="tab-btn" data-tab="snacks">Snacks & Sweets</button>
       </div>
       <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ───── COFFEE CEREMONY ───── -->
+  <section id="ceremony">
+    <div class="container ceremony-wrap">
+      <div class="ceremony-text">
+        <span class="section-label">The Buna Ceremony</span>
+        <h2>Coffee is Not<br/>a Drink. It's a Welcome.</h2>
+        <p>In Ethiopia, the coffee ceremony — <em>buna</em> — is sacred. Green beans are washed, roasted over coals, ground by hand, and brewed in a clay jebena. The aroma of roasting beans and burning frankincense fills the room.</p>
+        <p>The ceremony has three rounds, each with its own name:</p>
+        <div class="ceremony-rounds">
+          <div class="round-card">
+            <strong>Abol</strong>
+            <span>The first pour — strongest and most flavourful</span>
+          </div>
+          <div class="round-card">
+            <strong>Huletegna</strong>
+            <span>The second pour — smoother and mellow</span>
+          </div>
+          <div class="round-card">
+            <strong>Bereka</strong>
+            <span>The third pour — a blessing to close</span>
+          </div>
+        </div>
+        <p class="ceremony-note">We hold live ceremonies every weekend. Book ahead — space is limited and the experience takes about 45 minutes.</p>
+        <a href="#order" class="btn-primary">Book a Ceremony</a>
+      </div>
+      <div class="ceremony-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop&q=80"
+          alt="Traditional Ethiopian coffee being prepared"
+          class="ceremony-img"
+        />
+      </div>
     </div>
   </section>
 
@@ -132,32 +180,32 @@
   <section id="gallery">
     <div class="container">
       <span class="section-label">The Vibe</span>
-      <h2 class="section-title">Come See for Yourself</h2>
+      <h2 class="section-title">A Taste of Ethiopia</h2>
     </div>
     <div class="gallery-grid">
       <div class="g-item g-large">
-        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&auto=format&fit=crop&q=80" alt="Café interior with wooden tables and warm lighting" />
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&auto=format&fit=crop&q=80" alt="Warm café interior with wooden tables" />
         <div class="g-label">The Main Room</div>
       </div>
       <div class="g-item">
-        <img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&auto=format&fit=crop&q=80" alt="Beautiful latte art in a white cup" />
-        <div class="g-label">Latte Art</div>
+        <img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&auto=format&fit=crop&q=80" alt="Coffee in a traditional cup" />
+        <div class="g-label">Buna Service</div>
       </div>
       <div class="g-item">
-        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop&q=80" alt="Fresh croissants and pastries on display" />
-        <div class="g-label">Morning Bakes</div>
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&auto=format&fit=crop&q=80" alt="Freshly roasted coffee beans" />
+        <div class="g-label">Fresh Roast</div>
       </div>
       <div class="g-item g-tall">
-        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&auto=format&fit=crop&q=80" alt="Sunny outdoor café terrace with plants" />
-        <div class="g-label">The Garden Terrace</div>
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&auto=format&fit=crop&q=80" alt="Outdoor café terrace" />
+        <div class="g-label">Garden Seating</div>
       </div>
       <div class="g-item">
-        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&auto=format&fit=crop&q=80" alt="Brunch plate with eggs and avocado toast" />
-        <div class="g-label">Brunch Plate</div>
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop&q=80" alt="Colourful Ethiopian platter" />
+        <div class="g-label">Sharing Platter</div>
       </div>
       <div class="g-item">
-        <img src="https://images.unsplash.com/photo-1442550528053-c431ecb55509?w=600&auto=format&fit=crop&q=80" alt="Coffee beans and espresso preparation at the bar" />
-        <div class="g-label">The Bean Bar</div>
+        <img src="https://images.unsplash.com/photo-1442550528053-c431ecb55509?w=600&auto=format&fit=crop&q=80" alt="Coffee beans and brewing equipment" />
+        <div class="g-label">The Roasting Bar</div>
       </div>
     </div>
   </section>
@@ -180,40 +228,44 @@
         <h2>Order Ahead<br/>for Pickup</h2>
         <p>Place your order online and it'll be ready the moment you walk through the door. No waiting, no fuss.</p>
         <div class="order-steps">
-          <div class="step"><span class="step-num">1</span><span>Choose your drinks &amp; food</span></div>
+          <div class="step"><span class="step-num">1</span><span>Choose your drinks & food</span></div>
           <div class="step"><span class="step-num">2</span><span>Pick a pickup time</span></div>
-          <div class="step"><span class="step-num">3</span><span>Walk in, grab &amp; go</span></div>
+          <div class="step"><span class="step-num">3</span><span>Walk in, grab & go</span></div>
+        </div>
+        <div class="order-note">
+          <strong>☕ Coffee Ceremony Bookings</strong>
+          <p>Saturday & Sunday only · 45-minute experience · £15 per person · Max 8 guests</p>
         </div>
       </div>
       <form class="order-form" id="orderForm" novalidate>
         <h3>Quick Order Form</h3>
         <div class="form-group">
           <label for="oname">Your Name</label>
-          <input type="text" id="oname" placeholder="Priya" required />
+          <input type="text" id="oname" placeholder="Selam" required />
         </div>
         <div class="form-group">
           <label for="ophone">Phone / WhatsApp</label>
-          <input type="tel" id="ophone" placeholder="+1 234 567 8900" required />
+          <input type="tel" id="ophone" placeholder="+44 7700 900123" required />
         </div>
         <div class="form-group">
           <label for="otime">Pickup Time</label>
           <select id="otime" required>
             <option value="">Select a time</option>
-            <option>7:00 AM</option><option>7:30 AM</option>
             <option>8:00 AM</option><option>8:30 AM</option>
             <option>9:00 AM</option><option>9:30 AM</option>
             <option>10:00 AM</option><option>11:00 AM</option>
             <option>12:00 PM</option><option>1:00 PM</option>
             <option>2:00 PM</option><option>3:00 PM</option>
+            <option>4:00 PM</option><option>5:00 PM</option>
           </select>
         </div>
         <div class="form-group">
           <label for="oitems">What would you like?</label>
-          <textarea id="oitems" rows="4" placeholder="e.g. 1x Oat Flat White, 1x Blueberry Scone, 1x Avocado Toast (no egg)…" required></textarea>
+          <textarea id="oitems" rows="4" placeholder="e.g. 1x Jebena Buna, 1x Doro Wat with injera, 1x Sambusa…" required></textarea>
         </div>
         <div class="form-group">
           <label for="onotes">Dietary notes</label>
-          <textarea id="onotes" rows="2" placeholder="Allergies, milk alternatives, sugar-free…"></textarea>
+          <textarea id="onotes" rows="2" placeholder="Allergies, spice level, gluten-free injera…"></textarea>
         </div>
         <button type="submit" class="btn-primary full-width">Place Order</button>
         <div class="form-success" id="formSuccess" hidden>
@@ -232,19 +284,19 @@
         <div class="contact-card">
           <span class="cc-icon">📍</span>
           <h3>Address</h3>
-          <p>18 Blossom Lane<br/>Midtown, City, ST 20045</p>
+          <p>24 Bole Road<br/>Little Ethiopia, City, ST 30091</p>
         </div>
         <div class="contact-card">
           <span class="cc-icon">🕐</span>
           <h3>Opening Hours</h3>
-          <p>Mon – Fri: 7 AM – 6 PM</p>
-          <p>Sat – Sun: 8 AM – 5 PM</p>
+          <p>Mon – Fri: 7 AM – 7 PM</p>
+          <p>Sat – Sun: 8 AM – 6 PM</p>
         </div>
         <div class="contact-card">
           <span class="cc-icon">📞</span>
           <h3>Call or Text</h3>
-          <p><a href="tel:+10987654321">+1 (098) 765-4321</a></p>
-          <p><a href="mailto:hello@brewandbloom.com">hello@brewandbloom.com</a></p>
+          <p><a href="tel:+447700900123">+44 7700 900123</a></p>
+          <p><a href="mailto:selam@dembelcafe.com">selam@dembelcafe.com</a></p>
         </div>
         <div class="contact-card">
           <span class="cc-icon">📲</span>
@@ -252,16 +304,6 @@
           <div class="social-links">
             <a href="#" class="social-btn">Instagram</a>
             <a href="#" class="social-btn">Facebook</a>
-            <a href="#" class="social-btn">Google Maps</a>
-          </div>
-        </div>
-      </div>
-      <div class="map-placeholder">
-        <div class="map-content">
-          <div class="map-pin-icon">📍</div>
-          <div>
-            <strong>18 Blossom Lane, Midtown</strong>
-            <p>Street parking on Blossom Lane · Bus stop 2 min walk (Route 14, 22)</p>
           </div>
         </div>
       </div>
@@ -272,14 +314,22 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="#hero" class="logo">☕ Brew &amp; Bloom</a>
-        <p>Specialty coffee and homemade bakes, brewed with love since 2017.</p>
+        <a href="#hero" class="logo">
+          <svg class="logo-svg" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C19 4 16 7 16 12C16 15 17 17 18 18L14 22C12 24 11 27 11 30V38C11 40 12 42 14 42H34C36 42 37 40 37 38V30C37 27 36 24 34 22L30 18C31 17 32 15 32 12C32 7 29 4 24 4Z" fill="currentColor" opacity="0.9"/>
+            <path d="M34 24L40 20L38 26Z" fill="currentColor" opacity="0.9"/>
+            <ellipse cx="24" cy="44" rx="10" ry="2" fill="currentColor" opacity="0.6"/>
+          </svg>
+          <span>Dembel</span>
+        </a>
+        <p>Authentic Ethiopian coffee & kitchen, from the birthplace of coffee to your cup. Brewed with love since 2015.</p>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
+          <li><a href="#ceremony">Coffee Ceremony</a></li>
           <li><a href="#order">Order Online</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -288,14 +338,14 @@
         <h4>More</h4>
         <ul>
           <li><a href="#">Allergen Info</a></li>
-          <li><a href="#">Catering &amp; Events</a></li>
+          <li><a href="#">Catering & Events</a></li>
           <li><a href="#">Gift Cards</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 Brew &amp; Bloom Café. All rights reserved. | Built as a professional pitch demo.</p>
+      <p>© 2024 Dembel Ethiopian Coffee House. All rights reserved. | Built as a professional pitch demo.</p>
     </div>
   </footer>
 

@@ -1,4 +1,4 @@
-# ☕ Brew & Bloom Café – Professional Website
+# ☕ Dembel – Ethiopian Coffee House & Kitchen
 
 > **A live pitch project** · HTML / CSS / JavaScript · Zero dependencies · Fully responsive · Real photography throughout
 
@@ -14,8 +14,8 @@ Open `index.html` in any browser — no server, no build step required.
 
 ```
 LBW/
-├── index.html   – Full single-page website (semantic HTML5)
-├── style.css    – All styles (custom properties, CSS Grid, animations)
+├── index.html   – Full single-page website (semantic HTML5, custom SVG logo)
+├── style.css    – All styles (Ethiopian-inspired warm earth palette)
 ├── app.js       – Menu tabs, carousel, form validation, scroll spy, reveal
 └── README.md    – This file + pitch explanation
 ```
@@ -26,112 +26,117 @@ LBW/
 
 | Feature | Detail |
 |---|---|
+| **Custom SVG logo** | Hand-coded jebena (Ethiopian coffee pot) logo in SVG — no image file needed |
 | **Sticky navbar** | Transparent on load → dark glass on scroll, active link highlighting via scroll spy |
-| **Hero section** | Full-screen real café photo with dark overlay, animated headline, two CTAs |
-| **Highlights bar** | Awards, sourcing, baking, and star rating trust signals |
-| **About section** | Real barista photo, founder story, animated "7+ Years" badge card |
-| **Interactive menu** | 4 tabs × 4 items each — every item has a real food photograph |
+| **Hero section** | Full-screen real coffee photo with dark overlay, animated headline, two CTAs |
+| **Highlights bar** | Awards, origin story, in-house roasting, and star rating trust signals |
+| **About section** | Founder story (Selam Tadesse, Addis Ababa → your city), real photo, badge card |
+| **Interactive menu** | 4 tabs × 4 items each — authentic Ethiopian dishes with real food photos |
+| **Coffee ceremony section** | Dedicated section explaining the three rounds: Abol, Huletegna, Bereka |
 | **Menu image fallback** | `onerror` handler ensures layout never breaks if a URL fails |
-| **Photo gallery** | 6-slot CSS Grid masonry with real café/food photos, hover zoom effect |
+| **Photo gallery** | 6-slot CSS Grid masonry with real photos, hover zoom effect |
 | **Testimonial carousel** | Auto-advancing with dot navigation, pauses on hover |
-| **Online order form** | Full validation, loading state, success confirmation |
-| **Contact section** | Address, hours, phone, email, socials, map placeholder |
+| **Online order form** | Full validation, loading state, success confirmation, ceremony booking info |
+| **Contact section** | Address, hours, phone, email, socials |
 | **Scroll reveal** | IntersectionObserver-powered fade-in animations |
 | **Mobile-first** | Hamburger menu, stacked layouts, touch-friendly at all breakpoints |
 
 ---
 
-## 🖼️ Real Images Used
+## 🇪🇹 Authentic Ethiopian Content
 
-All photos are free-to-use from [Unsplash](https://unsplash.com) — loaded directly by URL, no downloads needed.
+### Menu Categories
 
-### Hero & Structural
+**Buna (Coffee)** — Traditional Ethiopian coffee
+| Item | Description |
+|---|---|
+| Jebena Buna | Clay pot brewed, three rounds, frankincense |
+| Buna Macchiato | Yirgacheffe double shot with steamed milk |
+| Cold Buna | 18-hour cold brew from Sidamo beans |
+| Yirgacheffe Pour-Over | Hand-poured, jasmine & bergamot notes |
+
+**Tea & Drinks**
+| Item | Description |
+|---|---|
+| Wotet Chat | Spiced black tea with milk, cardamom, cinnamon |
+| Tena Adam Tea | Caffeine-free herbal infusion with honey & lime |
+| Suf (Hibiscus) Ade | Fresh hibiscus drink with ginger & honey |
+| Buna Bati | Espresso, dark chocolate, berberé spice |
+
+**Ethiopian Kitchen**
+| Item | Description |
+|---|---|
+| Doro Wat | National dish: chicken in berberé, slow-cooked 4 hrs |
+| Tibs (Beef) | Sautéed beef with jalapeño, rosemary, niter kibbeh |
+| Yetsom Beyaynetu | Fasting platter: 5 vegetarian dishes on injera |
+| Misir Wat | Red lentils in berberé sauce |
+
+**Snacks & Sweets**
+| Item | Description |
+|---|---|
+| Sambusa | Crispy spiced pastry triangles (lentil or beef) |
+| Dabo Kolo | Crunchy roasted bread snacks |
+| Yemar Yekwoteta | Traditional Ethiopian honey cake |
+| Fendisha | Popcorn — the traditional coffee companion |
+
+### Coffee Ceremony Section
+
+A dedicated section explaining the Ethiopian coffee ceremony and its three rounds:
+
+1. **Abol** — The first pour, strongest and most flavourful
+2. **Huletegna** — The second pour, smoother and mellow
+3. **Bereka** — The third pour, a blessing to close
+
+### Real Images Used
+
+All photos are free-to-use from [Unsplash](https://unsplash.com), loaded directly by URL.
+
 | Location | Subject |
 |---|---|
-| Hero background | Cosy café interior with warm ambient lighting |
-| About section | Barista carefully pouring latte art |
-
-### Gallery (6 photos)
-| Slot | Subject |
-|---|---|
-| Main Room (large) | Café interior with wooden tables |
-| Latte Art | Close-up latte art in a white cup |
-| Morning Bakes | Fresh croissants on a tray |
-| Garden Terrace (tall) | Sunny outdoor café terrace with plants |
-| Brunch Plate | Avocado toast and eggs plate |
-| The Bean Bar | Coffee beans and espresso bar |
-
-### Menu Cards (16 photos)
-
-**Coffee**
-| Item | Photo |
-|---|---|
-| Signature Flat White | Flat white in a ceramic cup |
-| Cold Brew Float | Iced coffee with cream |
-| Matcha Oat Latte | Green matcha in a glass |
-| Single Origin Pour-Over | Barista hand-brewing pour-over |
-
-**Other Drinks**
-| Item | Photo |
-|---|---|
-| Loose-Leaf Chai | Spiced chai in a glass mug |
-| Hibiscus Lemonade | Vibrant pink drink |
-| Dark Hot Chocolate | Rich cocoa in a white mug |
-| Rose Steamer | Steamed milk with dried petals |
-
-**Pastries & Bakes**
-| Item | Photo |
-|---|---|
-| Butter Croissant | Golden flaky croissant on wood |
-| Blueberry & Lemon Scone | Scone with clotted cream |
-| Banana Walnut Loaf | Sliced loaf on a plate |
-| Brown Butter Cookie | Cookie with sea salt flakes |
-
-**All-Day Brunch**
-| Item | Photo |
-|---|---|
-| Smashed Avocado Toast | Sourdough with avocado & dukkah |
-| Eggs Your Way | Poached eggs with roasted tomatoes |
-| Ricotta Hotcakes | Fluffy pancake stack with berries |
-| Grain Bowl | Colourful quinoa and vegetable bowl |
+| Hero background | Coffee being poured in a traditional setting |
+| About section | Coffee beans being freshly roasted |
+| Ceremony section | Traditional coffee being prepared |
+| Gallery (6 photos) | Café interior, buna service, fresh roast, terrace, platter, roasting bar |
+| Menu cards (16 photos) | Each dish has its own real food/drink photo |
 
 ---
 
 ## 🎯 Pitch Explanation – How This Website Grows the Business
 
-### The Problem Most Local Cafés Face
+### The Problem
 
-A café can serve the best flat white in the city and still lose foot traffic to a chain with a polished app and Google presence. When someone searches "café near me," the business without a website — or with an outdated one — loses the click before the coffee is even considered.
+Ethiopian restaurants and cafés often rely on word-of-mouth within the diaspora community. A Google search for "Ethiopian coffee near me" frequently returns nothing — not because the businesses don't exist, but because they have no web presence. A café serving the birthplace of coffee deserves a website that tells that story.
 
 ### What This Website Solves
 
-**1. First impressions that match the in-café experience**
-Real photography of the actual drinks, food, and space means a customer's expectation matches reality the moment they walk in. Stock illustrations or emojis signal low effort; real images signal pride.
+**1. Cultural storytelling as a competitive advantage**
+The coffee ceremony section doesn't just list a product — it explains a 1,000-year-old tradition. That's content no chain café can replicate. Visitors who discover the ceremony through the website become experiential customers, not just transactional ones.
 
 **2. Online orders captured directly — no commission fees**
-Delivery platforms (UberEats, DoorDash) charge 15–30% per order. This built-in pickup order form sends orders directly to the owner via a backend of their choice (Formspree, EmailJS, or a simple PHP mailer), saving significant margin on every transaction.
+Delivery platforms (UberEats, Deliveroo) charge 15–30% per order. This built-in pickup order form sends orders directly to the owner, preserving margin on every plate of doro wat and every cup of buna.
 
-**3. Menu clarity drives higher spend**
-The tabbed menu with photos and pricing means customers arrive having already decided what they want — and often having noticed items they wouldn't have known to ask for (the Cold Brew Float, the Grain Bowl). That's upsell without any staff effort.
+**3. Menu education drives higher spend**
+Ethiopian food has unfamiliar names (doro wat, yetsom beyaynetu, misir wat). The menu descriptions with photos mean customers arrive knowing what they want — and what they want to try. That's upsell without any staff effort.
 
-**4. Trust signals before the first visit**
-The "Best Café 2024" badge, 4.9-star rating, farm-to-table sourcing note, and real testimonials all do the work of convincing a first-time visitor before they leave their house.
+**4. Trust signals for a niche cuisine**
+The "Best Café 2024" badge, 4.9-star rating, and authentic testimonials (including from Ethiopian customers) all signal: this isn't a watered-down interpretation. It's the real thing.
 
 **5. Mobile-first by design**
-Over 65% of local business searches happen on phones. Every layout, button size, and image breakpoint was designed for mobile first and scaled up — not shrunk down.
+Over 65% of local business searches happen on phones. Every layout, button size, and image breakpoint was designed mobile-first.
 
 **6. SEO-ready structure**
-Semantic HTML (`<header>`, `<section>`, `<nav>`), a descriptive `<meta>` tag, and a meaningful `<title>` give search engines everything needed to index and rank the page correctly.
+Semantic HTML, descriptive meta tags, and a meaningful title give search engines everything needed to index and rank the page for "Ethiopian coffee" and "Ethiopian restaurant" searches.
 
 ### Business Metrics This Website Can Directly Affect
 
 | Metric | How |
 |---|---|
-| **New customer acquisition** | Google indexes the site; searches convert to visits |
-| **Average order value** | Menu photos encourage multi-item orders |
-| **Repeat visits** | "Follow us" social links build an ongoing audience |
-| **Operational efficiency** | Online pickup orders reduce phone call volume |
-| **Commission savings** | Direct orders bypass third-party delivery fees |
+| **New customer acquisition** | Google indexes the site; cultural-cuisine searches convert to visits |
+| **Average order value** | Menu photos and descriptions encourage multi-item orders |
+| **Ceremony bookings** | Dedicated section drives weekend ceremony reservations |
+| **Repeat visits** | Social links build an ongoing audience and community |
+| **Commission savings** | Direct pickup orders bypass third-party delivery fees |
+| **Cultural credibility** | Authentic content signals to diaspora community that this is genuine |
 
 ---
 
@@ -139,26 +144,13 @@ Semantic HTML (`<header>`, `<section>`, `<nav>`), a descriptive `<meta>` tag, an
 
 | Layer | Detail |
 |---|---|
-| **HTML5** | Semantic markup, accessible labels, `aria` attributes, no external dependencies |
+| **HTML5** | Semantic markup, accessible labels, `aria` attributes, inline SVG logo |
 | **CSS3** | Custom properties, CSS Grid, Flexbox, `clamp()`, `aspect-ratio`, `object-fit` |
 | **JavaScript (ES6+)** | Vanilla JS — no frameworks, no build tools, no `node_modules` |
 | **Fonts** | System font stack only (`Georgia`, `system-ui`) — zero external requests |
 | **Images** | Unsplash direct URLs with `onerror` fallback on every menu image |
+| **Logo** | Inline SVG jebena (Ethiopian coffee pot) — no image file needed |
 
----
-
-## 📋 How to Customise for a Real Café Owner
-
-1. **Brand** — Replace "Brew & Bloom" and the ☕ logo with the real café name
-2. **Hero photo** — Swap the Unsplash URL in `index.html` with a photo of the actual café
-3. **About photo** — Replace with a photo of the real owner or barista team
-4. **Gallery** — Replace the 6 Unsplash URLs with real photos of the space and food
-5. **Menu data** — Edit the `menuData` object in `app.js` — name, description, price, and swap each `img` URL for a real dish photo
-6. **Contact details** — Update address, phone, email, and hours in `index.html`
-7. **Order form backend** — Connect to [Formspree](https://formspree.io) (free tier, 5-min setup) or [EmailJS](https://emailjs.com) to receive orders by email
-8. **Google Maps** — Replace the `.map-placeholder` div with a Google Maps `<iframe>` embed
-9. **Analytics** — Add a Google Analytics 4 `<script>` snippet before `</head>`
-10. **Deploy** — Push to GitHub and enable GitHub Pages for a free live URL
 
 ---
 
@@ -167,12 +159,12 @@ Semantic HTML (`<header>`, `<section>`, `<nav>`), a descriptive `<meta>` tag, an
 ```bash
 git init
 git add .
-git commit -m "Initial commit: Brew & Bloom café website"
-git remote add origin https://github.com/YOUR_USERNAME/brew-and-bloom.git
+git commit -m "Initial commit: Dembel Ethiopian Coffee House website"
+git remote add origin https://github.com/Eden1916/FUTURE_FS_03.git
 git push -u origin main
 ```
 
-Then: **Settings → Pages → Deploy from `main` branch** → live at `https://YOUR_USERNAME.github.io/brew-and-bloom`
+Then: **Settings → Pages → Deploy from `main` branch** → live at `https://github.com/Eden1916/FUTURE_FS_03.git`
 
 ---
 
