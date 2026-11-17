@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bloom Café – Specialty Coffee & Homemade Bites</title>
+  <meta name="description" content="Brew & Bloom is a cosy specialty coffee café serving hand-crafted drinks, homemade pastries, and all-day brunch. Come in, slow down, stay a while." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <header id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="logo">☕ Brew &amp; Bloom</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Visit Us</a></li>
+        <li><a href="#order" class="btn-nav">Order Online</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ───── HERO ───── -->
+  <section id="hero">
+    <img
+      src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&auto=format&fit=crop&q=80"
+      alt="Cosy café interior with warm lighting"
+      class="hero-bg-img"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">☕ Specialty Coffee · Est. 2017</span>
+      <h1>Your Favourite<br/>Corner of the City</h1>
+      <p>Hand-crafted espresso drinks, freshly baked pastries, and a warm seat waiting for you — every single morning.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-primary">See the Menu</a>
+        <a href="#order" class="btn-ghost">Order for Pickup</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ───── HIGHLIGHTS BAR ───── -->
+  <section class="highlights-bar">
+    <div class="highlight">
+      <span class="hi-icon">🏅</span>
+      <div>
+        <strong>Best Café 2024</strong>
+        <span>Local Choice Awards</span>
+      </div>
+    </div>
+    <div class="highlight">
+      <span class="hi-icon">🌱</span>
+      <div>
+        <strong>Ethically Sourced</strong>
+        <span>Direct-trade beans</span>
+      </div>
+    </div>
+    <div class="highlight">
+      <span class="hi-icon">🧁</span>
+      <div>
+        <strong>Baked In-House</strong>
+        <span>Fresh every morning</span>
+      </div>
+    </div>
+    <div class="highlight">
+      <span class="hi-icon">⭐</span>
+      <div>
+        <strong>4.9 / 5 Stars</strong>
+        <span>900+ Google Reviews</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ABOUT ───── -->
+  <section id="about">
+    <div class="container two-col">
+      <div class="about-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&auto=format&fit=crop&q=80"
+          alt="Barista carefully pouring latte art"
+          class="about-img"
+        />
+        <div class="about-badge-card">
+          <strong>7+</strong>
+          <span>Years Brewing</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">Our Story</span>
+        <h2>Born from a Love<br/>of Good Coffee</h2>
+        <p>Brew &amp; Bloom started as a weekend pop-up in 2017. Owner and head barista Priya Nair had one goal: bring the kind of thoughtful, slow coffee she'd discovered travelling through Melbourne and Copenhagen to her own neighbourhood.</p>
+        <p>Seven years later, we still roast our beans in small batches, bake everything before 6 AM, and greet most of our regulars by name.</p>
+        <ul class="about-list">
+          <li>✅ Single-origin beans, sourced directly from farmers</li>
+          <li>✅ All pastries baked fresh on-site every morning</li>
+          <li>✅ Oat, almond, soy &amp; coconut milk available</li>
+          <li>✅ Dog-friendly outdoor seating</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── MENU ───── -->
+  <section id="menu">
+    <div class="container">
+      <span class="section-label">What We Serve</span>
+      <h2 class="section-title">The Menu</h2>
+      <p class="section-sub">Everything is made to order. Seasonal specials change weekly — follow us on Instagram to stay updated.</p>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="coffee">Coffee</button>
+        <button class="tab-btn" data-tab="drinks">Other Drinks</button>
+        <button class="tab-btn" data-tab="pastries">Pastries &amp; Bakes</button>
+        <button class="tab-btn" data-tab="brunch">All-Day Brunch</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ───── GALLERY ───── -->
+  <section id="gallery">
+    <div class="container">
+      <span class="section-label">The Vibe</span>
+      <h2 class="section-title">Come See for Yourself</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item g-large">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&auto=format&fit=crop&q=80" alt="Café interior with wooden tables and warm lighting" />
+        <div class="g-label">The Main Room</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&auto=format&fit=crop&q=80" alt="Beautiful latte art in a white cup" />
+        <div class="g-label">Latte Art</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop&q=80" alt="Fresh croissants and pastries on display" />
+        <div class="g-label">Morning Bakes</div>
+      </div>
+      <div class="g-item g-tall">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&auto=format&fit=crop&q=80" alt="Sunny outdoor café terrace with plants" />
+        <div class="g-label">The Garden Terrace</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&auto=format&fit=crop&q=80" alt="Brunch plate with eggs and avocado toast" />
+        <div class="g-label">Brunch Plate</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1442550528053-c431ecb55509?w=600&auto=format&fit=crop&q=80" alt="Coffee beans and espresso preparation at the bar" />
+        <div class="g-label">The Bean Bar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TESTIMONIALS ───── -->
+  <section id="testimonials">
+    <div class="container">
+      <span class="section-label">What Guests Say</span>
+      <h2 class="section-title">Real Reviews</h2>
+      <div class="testimonial-carousel" id="testimonialCarousel"></div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ───── ORDER / CTA ───── -->
+  <section id="order">
+    <div class="container order-wrap">
+      <div class="order-text">
+        <span class="section-label">Skip the Queue</span>
+        <h2>Order Ahead<br/>for Pickup</h2>
+        <p>Place your order online and it'll be ready the moment you walk through the door. No waiting, no fuss.</p>
+        <div class="order-steps">
+          <div class="step"><span class="step-num">1</span><span>Choose your drinks &amp; food</span></div>
+          <div class="step"><span class="step-num">2</span><span>Pick a pickup time</span></div>
+          <div class="step"><span class="step-num">3</span><span>Walk in, grab &amp; go</span></div>
+        </div>
+      </div>
+      <form class="order-form" id="orderForm" novalidate>
+        <h3>Quick Order Form</h3>
+        <div class="form-group">
+          <label for="oname">Your Name</label>
+          <input type="text" id="oname" placeholder="Priya" required />
+        </div>
+        <div class="form-group">
+          <label for="ophone">Phone / WhatsApp</label>
+          <input type="tel" id="ophone" placeholder="+1 234 567 8900" required />
+        </div>
+        <div class="form-group">
+          <label for="otime">Pickup Time</label>
+          <select id="otime" required>
+            <option value="">Select a time</option>
+            <option>7:00 AM</option><option>7:30 AM</option>
+            <option>8:00 AM</option><option>8:30 AM</option>
+            <option>9:00 AM</option><option>9:30 AM</option>
+            <option>10:00 AM</option><option>11:00 AM</option>
+            <option>12:00 PM</option><option>1:00 PM</option>
+            <option>2:00 PM</option><option>3:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="oitems">What would you like?</label>
+          <textarea id="oitems" rows="4" placeholder="e.g. 1x Oat Flat White, 1x Blueberry Scone, 1x Avocado Toast (no egg)…" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="onotes">Dietary notes</label>
+          <textarea id="onotes" rows="2" placeholder="Allergies, milk alternatives, sugar-free…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Place Order</button>
+        <div class="form-success" id="formSuccess" hidden>
+          🎉 Order received! We'll text you when it's ready. See you soon!
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label">Come Visit</span>
+      <h2 class="section-title">Find Us</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="cc-icon">📍</span>
+          <h3>Address</h3>
+          <p>18 Blossom Lane<br/>Midtown, City, ST 20045</p>
+        </div>
+        <div class="contact-card">
+          <span class="cc-icon">🕐</span>
+          <h3>Opening Hours</h3>
+          <p>Mon – Fri: 7 AM – 6 PM</p>
+          <p>Sat – Sun: 8 AM – 5 PM</p>
+        </div>
+        <div class="contact-card">
+          <span class="cc-icon">📞</span>
+          <h3>Call or Text</h3>
+          <p><a href="tel:+10987654321">+1 (098) 765-4321</a></p>
+          <p><a href="mailto:hello@brewandbloom.com">hello@brewandbloom.com</a></p>
+        </div>
+        <div class="contact-card">
+          <span class="cc-icon">📲</span>
+          <h3>Follow Along</h3>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">Facebook</a>
+            <a href="#" class="social-btn">Google Maps</a>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-content">
+          <div class="map-pin-icon">📍</div>
+          <div>
+            <strong>18 Blossom Lane, Midtown</strong>
+            <p>Street parking on Blossom Lane · Bus stop 2 min walk (Route 14, 22)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">☕ Brew &amp; Bloom</a>
+        <p>Specialty coffee and homemade bakes, brewed with love since 2017.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order Online</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#">Allergen Info</a></li>
+          <li><a href="#">Catering &amp; Events</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Brew &amp; Bloom Café. All rights reserved. | Built as a professional pitch demo.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
